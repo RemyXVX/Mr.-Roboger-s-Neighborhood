@@ -1,7 +1,32 @@
-#userInput {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  width: 310px;
-  height: 65px;
-  padding: 5px;
-  margin: 10px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.textInput {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+}
+
+.textOutput {
+  background-color: pink;
+  color: rgb(59, 56, 51);
+  padding: 15px;
 }
