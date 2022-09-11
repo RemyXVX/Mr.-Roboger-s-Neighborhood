@@ -1,7 +1,7 @@
 // //Ulitility// //
-let arrNum = beepBoop()
+/*let arrNum = beepBoop()
 let beepArr = arrNum.split("")
-let outStr = ""
+let outStr = ""*/
 
 //const oneNum = "Beep!"
 //const twoNum = "Boop!"
@@ -18,13 +18,24 @@ function beepBoop(number) {
 };
 
 function translateNumBeep () {
-  const oneNum = "Beep!"
-  const letOne = [1]
-    for (let i = 0; 1 < arrNum.length; i++) {
-      if (letOne.includes(arrNum[i])) {
+  let arrNum = []
+
+  for (let i = 0; i < arrNum.length; i++) {
+    if (.includes(arrNum[i])) {
       break;
     };
-    oneNum += arrNum[i];
+    console.log(1)
+  };
+  .push("Beep!")
+
+
+  letOne = 1
+  console.log(letOne)
+    for (let i = 0; 1 < arrNum.length; i++) {
+      if (.includes(arrNum[i])) {
+      break;
+    };
+    arrNum.push("Beep!")
   };
 };
 
@@ -35,8 +46,7 @@ window.addEventListener("load", function () {
 
   tInput.addEventListener('keyup', (event) => {
     const translation = event.target.value
-    console.log(translation);
     tOutput.innerText = translation;
-  })
+  });
 
 });
