@@ -1,15 +1,15 @@
-  //BL//
-function beepBoop() {
-  let arrayBeepBoop = [0, 1, 2 ,3 , 4]
+// //BL// //
+function beepBoop(number) {
+  let arrayBeepBoop = parseInt(number);
   let arrayResult = [];
-  arrayBeepBoop.forEach(function(element) {
-    arrayResult.push(element + 1);
-    return beepBoop
-  });
+  for (let i = 0; i <= arrayBeepBoop; i += 1) {
+    arrayResult.push(i);
+  };
+  return arrayResult;
 };
 
 
-  //UI//
+ // //UI// //
 window.addEventListener("load", function () {
   const tInput = document.getElementById('tInput');
   const tOutput = document.getElementById('tOutput');
