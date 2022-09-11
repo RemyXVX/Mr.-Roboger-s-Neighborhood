@@ -31,8 +31,11 @@ Test:
 (1)
 Describe: beepBoop()
 
-Test: "It should return an array of numbers from 0 to the user's inputted number"
+///////////////////////////////////////////////////////////////////
+
+Test 1: "It should return an array of numbers from 0 to the user's inputted number"
 Code: beepBoop(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
 
-Test: "It should..." // this is the start of 2nd test for beepBoop()
+Test 2: "It should return be to look for numbers with 1 and switch it to 'Beep!'"
+Code:
