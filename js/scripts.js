@@ -17,26 +17,20 @@ function beepBoop(number) {
   return arrayResult;
 };
 
-function translateNumBeep () {
-  let arrNum = []
-
+function translateNumBeep (beepBoop) {
+  let arrNum = beepBoop
   for (let i = 0; i < arrNum.length; i++) {
-    if (.includes(arrNum[i])) {
-      break;
+    if (i.toString().includes(3)) {
+      arrNum[i] = "Won't you be my neighbor?";
+    } else if (i.toString().includes(2)) {
+      arrNum[i] = "Boop!";
+    } else if (i.toString().includes(1)) {
+      arrNum[i] = "Beep!"; 
+    } else {
+      arrNum[i] = i.toString(); {
     };
-    console.log(1)
   };
-  .push("Beep!")
-
-
-  letOne = 1
-  console.log(letOne)
-    for (let i = 0; 1 < arrNum.length; i++) {
-      if (.includes(arrNum[i])) {
-      break;
-    };
-    arrNum.push("Beep!")
-  };
+};
 };
 
  // //UI// //
