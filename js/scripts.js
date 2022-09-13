@@ -17,13 +17,25 @@ function beepBoop(number) {
   return arrayResult;
 };
 
-function transalateWords () {
+function appearWords () {
   const arrWord = ["Bleep!","Bloop!", "Won't you be my Neighbor?"]
-  let arrReturn = []
+  let arrReturn = [];
   for (let i = 0; i <= arrWord.length ; i += 1) {
     arrReturn = arrWord
   };
   return arrReturn;
+}
+
+function translateWords (number) {
+  let numOne = parseInt(number)
+  let arrConvert = [];
+  for (let i = 0; i <= numOne.length; i++) {
+    if (numOne[i] != 1) {
+      arrConvert += numOne[i];
+      console.log(arrConvert += numOne[i]);
+    };
+  };
+  return arrConvert;
 }
 
 /*function translateNumBeep (beepBoop) {

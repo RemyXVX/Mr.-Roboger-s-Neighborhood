@@ -54,3 +54,7 @@ Code:function transalateWords () {
   return arrReturn;
 }
 Expected Output: ["Beep!","Bloop!","Won't you be my neighbor?"]
+
+Test 3: "It should convert all 1s to "Bleep!"
+Code:
+Expected Output: 
