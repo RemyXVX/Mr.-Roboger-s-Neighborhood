@@ -17,7 +17,16 @@ function beepBoop(number) {
   return arrayResult;
 };
 
-function translateNumBeep (beepBoop) {
+function transalateWords () {
+  const arrWord = ["Bleep!","Bloop!", "Won't you be my Neighbor?"]
+  let arrReturn = []
+  for (let i = 0; i <= arrWord.length ; i += 1) {
+    arrReturn = arrWord
+  };
+  return arrReturn;
+}
+
+/*function translateNumBeep (beepBoop) {
   let arrNum = beepBoop
   for (let i = 0; i < arrNum.length; i++) {
     if (i.toString().includes(3)) {
@@ -30,8 +39,7 @@ function translateNumBeep (beepBoop) {
       arrNum[i] = i.toString(); {
     };
   };
-};
-};
+};*/
 
  // //UI// //
 window.addEventListener("load", function () {

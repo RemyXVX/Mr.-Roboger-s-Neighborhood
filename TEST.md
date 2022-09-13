@@ -34,8 +34,23 @@ Describe: beepBoop()
 ///////////////////////////////////////////////////////////////////
 
 Test 1: "It should return an array of numbers from 0 to the user's inputted number"
-Code: beepBoop(5);
+Code: function beepBoop(number) {
+  let arrayBeepBoop = parseInt(number);
+  let arrayResult = [];
+  for (let i = 0; i <= arrayBeepBoop; i += 1) {
+    arrayResult.push(i);
+  };
+  return arrayResult;
+};
 Expected Output: [0, 1, 2, 3, 4, 5]
 
-Test 2: "It should return be to look for numbers with 1 and switch it to 'Beep!'"
-Code:
+Test 2: "It should return an array of the words back to me
+Code:function transalateWords () {
+  const arrWord = ["Bleep!","Bloop!", "Won't you be my neighbor?"]
+  let arrReturn = []
+  for (let i = 0; i <= arrWord.length ; i += 1) {
+    arrReturn = arrWord
+  };
+  return arrReturn;
+}
+Expected Output: ["Beep!","Bloop!","Won't you be my neighbor?"]
