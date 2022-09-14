@@ -1,5 +1,13 @@
 // //Ulitility// //
 
+/*if (number > 99999) {
+  document.getElementById("madRobo").removeAttribute("class");
+  document.que
+  } else if (number < 99999) {
+  document.getElementById("madRobo").setAttribute("class");
+  return "NOOO!"
+};*/
+
 // //BL// //
 function beepBoop(number) {
   let arrayBeepBoop = parseInt(number);
@@ -10,17 +18,19 @@ function beepBoop(number) {
   return arrayResult;
 };
 
-function dumbWord(num) {
+function allWord(num) {
   let theWord = [];
-  for (i = 0; i <= num; i ++) {
+  for (i = 1; i <= num; i ++) {
     if ([i].toString().includes(1)) {
       theWord.push("Bleep!");
     } else if ([i].toString().includes(2)) {
       theWord.push("Bloop!");
     } else if ([i].toString().includes(3)) {
       theWord.push("Won't you be my neighbor?")
-    } else {
+    }  else {
       theWord.push(i); 
+    } if ([i] <= (i === 100)) {
+      break;
     };
   };
   return theWord;
@@ -33,6 +43,6 @@ window.addEventListener("load", function () {
 
   tInput.addEventListener('keyup', (event) => {
     const translation = event.target.value
-    tOutput.innerText = dumbWord(translation).join(" ");
+    tOutput.innerText = allWord(translation).join(" ");
   });
 });
