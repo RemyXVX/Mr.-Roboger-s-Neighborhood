@@ -17,6 +17,8 @@ function dumbWord(num) {
       theWord.push("Bleep!");
     } else if ([i].toString().includes(2)) {
       theWord.push("Bloop!");
+    } else if ([i].toString().includes(3)) {
+      theWord.push("Won't you be my neighbor?")
     } else {
       theWord.push(i); 
     };
