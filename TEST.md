@@ -75,3 +75,20 @@ function dumbWord(num) {
 };
 Expected Output: [0, "Bleep!" ..., 8, 9, "Bleep!", "Bleep!", ..., 20]
 
+Test 4: "It should convert numbers with 2 into "Bloop!"
+Code:
+function dumbWord(num) {
+  let theWord = [];
+  for (i = 0; i <= num; i ++) {
+    if ([i].toString().includes(1)) {
+      theWord.push("Bleep!");
+    } else if ([i].toString().includes(2)) {
+      theWord.push("Bloop!");
+    } else {
+      theWord.push(i); 
+    };
+  };
+  return theWord;
+};
+Expected Output: [0, "Bleep!", "Bloop!" ..., 8, 9, "Bleep!", "Bleep!", "Bloop!", ...30]
+

@@ -15,12 +15,15 @@ function dumbWord(num) {
   for (i = 0; i <= num; i ++) {
     if ([i].toString().includes(1)) {
       theWord.push("Bleep!");
+    } else if ([i].toString().includes(2)) {
+      theWord.push("Bloop!");
     } else {
       theWord.push(i); 
     };
   };
   return theWord;
 };
+
 
 
  // //UI// //
