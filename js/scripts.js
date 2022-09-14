@@ -1,11 +1,4 @@
 // //Ulitility// //
-/*let arrNum = beepBoop()
-let beepArr = arrNum.split("")
-let outStr = ""*/
-
-//const oneNum = "Beep!"
-//const twoNum = "Boop!"
-//const thrreeNum = "Won't you be my neighbor?"
 
 // //BL// //
 function beepBoop(number) {
@@ -27,16 +20,17 @@ function appearWords () {
 }
 
 function translateWords (number) {
-  let numOne = parseInt(number)
+  let numOne = number
+  const bleep = "Bleep!";
   let arrConvert = [];
   for (let i = 0; i <= numOne.length; i++) {
-    if (numOne[i] != 1) {
-      arrConvert += numOne[i];
-      console.log(arrConvert += numOne[i]);
+    if (numOne.includes[i] != 1) {
+      break
     };
-  };
+    arrConvert += 1
+  }
   return arrConvert;
-}
+};
 
 /*function translateNumBeep (beepBoop) {
   let arrNum = beepBoop
