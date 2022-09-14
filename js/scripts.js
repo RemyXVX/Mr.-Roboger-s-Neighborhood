@@ -1,13 +1,3 @@
-// //Ulitility// //
-
-/*if (number > 99999) {
-  document.getElementById("madRobo").removeAttribute("class");
-  document.que
-  } else if (number < 99999) {
-  document.getElementById("madRobo").setAttribute("class");
-  return "NOOO!"
-};*/
-
 // //BL// //
 function beepBoop(number) {
   let arrayBeepBoop = parseInt(number);
