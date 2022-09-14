@@ -25,7 +25,7 @@ _Creating a webpage that will transfer the numbers being submitted into the awes
 * _Installation of Node.JS applied for language_
 
 ## Known Bugs
-* _currentlty no bugs_
+* _I was able to fix the pag so when the use applies number it will return a Mr Roboger's translation, unfortunately I haven't made a cap on how far up the number can be. The page crashes if the input number is to high._
 
 ## License
 * _MIT_

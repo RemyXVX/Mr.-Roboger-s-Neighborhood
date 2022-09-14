@@ -96,32 +96,3 @@ Test 5: "It should conver numbers with 3 into "Won't you be my neighbor?"
 Code:
 
 Expected Output:[0, "Bleep!", "Bloop!" ..., 8, 9, "Bleep!", "Bleep!", "Bloop!", ..."Won't you be my neighbor?", "Bleep!", "Bloop!", "Won't you be my neighbor?", ..., 40]
-
-Test :
-Code:
-Expected Output:
-
-Test :
-Code:
-Expected Output:
-
-Test :
-Code:
-Expected Output:
-
-Test :
-Code:
-Expected Output:
-
-Test :
-Code:
-Expected Output:
-
-Test :
-Code:
-Expected Output:
-
-Test :
-Code:
-Expected Output:
-

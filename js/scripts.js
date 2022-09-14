@@ -26,8 +26,6 @@ function dumbWord(num) {
   return theWord;
 };
 
-
-
  // //UI// //
 window.addEventListener("load", function () {
   const tInput = document.getElementById('tInput');
@@ -35,7 +33,6 @@ window.addEventListener("load", function () {
 
   tInput.addEventListener('keyup', (event) => {
     const translation = event.target.value
-    tOutput.innerText = translation;
+    tOutput.innerText = dumbWord(translation).join(" ");
   });
-
 });
