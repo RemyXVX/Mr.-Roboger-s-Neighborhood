@@ -34,7 +34,8 @@ Describe: beepBoop()
 ///////////////////////////////////////////////////////////////////
 
 Test 1: "It should return an array of numbers from 0 to the user's inputted number"
-Code: function beepBoop(number) {
+Code: 
+function beepBoop(number) {
   let arrayBeepBoop = parseInt(number);
   let arrayResult = [];
   for (let i = 0; i <= arrayBeepBoop; i += 1) {
@@ -44,17 +45,33 @@ Code: function beepBoop(number) {
 };
 Expected Output: [0, 1, 2, 3, 4, 5]
 
-Test 2: "It should return an array of the words back to me
-Code:function transalateWords () {
-  const arrWord = ["Bleep!","Bloop!", "Won't you be my neighbor?"]
-  let arrReturn = []
-  for (let i = 0; i <= arrWord.length ; i += 1) {
-    arrReturn = arrWord
-  };
-  return arrReturn;
-}
-Expected Output: ["Beep!","Bloop!","Won't you be my neighbor?"]
-
-Test 3: "It should convert all 1s to "Bleep!"
+Test 2: "It should convert 1 to "Bleep!"
 Code:
-Expected Output: 
+function dumbWord(num) {
+  let theWord = [];
+  for (i = 0; i <= num; i ++) {
+    if ([i].includes(1)) {
+      theWord.push("Bleep!");
+    } else {
+      theWord.push(i); 
+    };
+  };
+  return theWord;
+};
+Expected Output: [0, "Bleep!"]
+
+Test 3: "It should convert all words with '1's in it to "Bleep""
+Code:
+function dumbWord(num) {
+  let theWord = [];
+  for (i = 0; i <= num; i ++) {
+    if ([i].toString().includes(1)) {
+      theWord.push("Bleep!");
+    } else {
+      theWord.push(i); 
+    };
+  };
+  return theWord;
+};
+Expected Output: [0, "Bleep!" ..., 8, 9, "Bleep!", "Bleep!", ..., 20]
+
