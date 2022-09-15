@@ -27,12 +27,20 @@ function allWord(num) {
 };
 
  // //UI// //
+
 window.addEventListener("load", function () {
   const tInput = document.getElementById('tInput');
   const tOutput = document.getElementById('tOutput');
+  let resetBtn = document.getElementById("btn");
+
 
   tInput.addEventListener('keyup', (event) => {
     const translation = event.target.value
     tOutput.innerText = allWord(translation).join(" ");
   });
+
+  resetBtn.addEventListener("click", function () {
+    location.reload();
+  });
+
 });

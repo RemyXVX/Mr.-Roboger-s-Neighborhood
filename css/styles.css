@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow: hidden;
   background-color: whitesmoke;
 }
 
@@ -38,6 +39,7 @@ body {
   width: 767px;
   height: 150px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .hidden {
@@ -47,6 +49,12 @@ body {
   display: block;
   background-color: rgb(216, 173, 173);
   visibility: hidden
+}
+
+#btn {
+  margin-left: 8px;
+  width: 735px;
+  background-color: aliceblue;
 }
 
 .smol {
